@@ -41,37 +41,37 @@ It allows secure user registration, authentication, and real-time video-based ve
 ```
 Biometric_project/
 │
-├── README.md                  # Project documentation
-├── requirements.txt           # Python dependencies
-├── .gitignore                  # Ignore unnecessary files
+├── README.md                 
+├── requirements.txt          
+├── .gitignore                  
 │
 ├── backend/
-│   ├── main.py                 # Starts FastAPI/Flask server
-│   ├── config.py               # Config variables (DB URL, thresholds, keys)
+│   ├── main.py                
+│   ├── config.py               
 │   │
 │   ├── routes/
 │   │   ├── __init__.py
-│   │   ├── liveness_routes.py  # Endpoints for liveness detection
-│   │   ├── face_routes.py      # Endpoints for face match/register
-│   │   └── auth_routes.py      # Login / JWT authentication
+│   │   ├── liveness_routes.py 
+│   │   ├── face_routes.py      
+│   │   └── auth_routes.py      
 │   │
 │   ├── services/
 │   │   ├── __init__.py
-│   │   ├── liveness_service.py # Liveness logic (blink, head movement)
-│   │   ├── face_match.py       # Face embedding & matching logic
-│   │   └── video_processing.py # Frame extraction & preprocessing
+│   │   ├── liveness_service.py 
+│   │   ├── face_match.py      
+│   │   └── video_processing.py 
 │   │
 │   ├── utils/
 │   │   ├── __init__.py
-│   │   ├── logger.py           # Logs authentication attempts
-│   │   └── encryption.py       # File/data encryption
+│   │   ├── logger.py           
+│   │   └── encryption.py       
 │   │
-│   └── storage/                # Encrypted face data
+│   └── storage/                
 │
 ├── frontend/
-│   ├── index.html              # Main web UI
-│   ├── styles.css              # Styling
-│   └── scripts.js              # API communication + webcam capture
+│   ├── index.html              
+│   ├── styles.css              
+│   └── scripts.js              
 │
 └── tests/
     ├── test_liveness.py
