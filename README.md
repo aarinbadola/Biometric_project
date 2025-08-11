@@ -27,7 +27,7 @@ It allows secure user registration, authentication, and real-time video-based ve
 - cryptography
 
 **Frontend:**
-- HTML / CSS / JavaScript
+- React (JavaScript/TypeScript)
 - WebRTC (for live video streaming)
 - Fetch API for backend communication
 
