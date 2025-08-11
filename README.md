@@ -38,44 +38,47 @@ It allows secure user registration, authentication, and real-time video-based ve
 ---
 
 ## 📂 Project Structure
-'''Biometric_project/
+```
+Biometric_project/
 │
-├── README.md # Project documentation
-├── requirements.txt # Python dependencies
-├── .gitignore # Ignore unnecessary files
+├── README.md                  # Project documentation
+├── requirements.txt           # Python dependencies
+├── .gitignore                  # Ignore unnecessary files
 │
 ├── backend/
-│ ├── main.py # Starts FastAPI/Flask server
-│ ├── config.py # Config variables (DB URL, thresholds, keys)
-│ │
-│ ├── routes/
-│ │ ├── init.py
-│ │ ├── liveness_routes.py # Endpoints for liveness detection
-│ │ ├── face_routes.py # Endpoints for face match/register
-│ │ └── auth_routes.py # Login / JWT authentication
-│ │
-│ ├── services/
-│ │ ├── init.py
-│ │ ├── liveness_service.py # Liveness logic (blink, head movement)
-│ │ ├── face_match.py # Face embedding & matching logic
-│ │ └── video_processing.py # Frame extraction & preprocessing
-│ │
-│ ├── utils/
-│ │ ├── init.py
-│ │ ├── logger.py # Logs authentication attempts
-│ │ └── encryption.py # File/data encryption
-│ │
-│ └── storage/ # Encrypted face data
+│   ├── main.py                 # Starts FastAPI/Flask server
+│   ├── config.py               # Config variables (DB URL, thresholds, keys)
+│   │
+│   ├── routes/
+│   │   ├── __init__.py
+│   │   ├── liveness_routes.py  # Endpoints for liveness detection
+│   │   ├── face_routes.py      # Endpoints for face match/register
+│   │   └── auth_routes.py      # Login / JWT authentication
+│   │
+│   ├── services/
+│   │   ├── __init__.py
+│   │   ├── liveness_service.py # Liveness logic (blink, head movement)
+│   │   ├── face_match.py       # Face embedding & matching logic
+│   │   └── video_processing.py # Frame extraction & preprocessing
+│   │
+│   ├── utils/
+│   │   ├── __init__.py
+│   │   ├── logger.py           # Logs authentication attempts
+│   │   └── encryption.py       # File/data encryption
+│   │
+│   └── storage/                # Encrypted face data
 │
 ├── frontend/
-│ ├── index.html # Main web UI
-│ ├── styles.css # Styling
-│ └── scripts.js # API communication + webcam capture
+│   ├── index.html              # Main web UI
+│   ├── styles.css              # Styling
+│   └── scripts.js              # API communication + webcam capture
 │
 └── tests/
-├── test_liveness.py
-├── test_face_match.py
-└── test_auth.py'''
+    ├── test_liveness.py
+    ├── test_face_match.py
+    └── test_auth.py
+```
+
 
 ## Create and activate virtual environment
 python -m venv venv
